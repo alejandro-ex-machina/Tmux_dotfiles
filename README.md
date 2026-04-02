@@ -1,2 +1,2 @@
-# Tmux_dotfiles
-Archivos de configuración para Termux
+# Configuración Para Tmux
+Configuración y preferencias para Termux
