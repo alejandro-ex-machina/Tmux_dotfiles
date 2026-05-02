@@ -10,7 +10,7 @@ mkdir ~/src/asciimages
 
 cp ./assets/font.ttf ~/.termux
 cp ./assets/termux.properties ~/.termux
-cp ./assets/totenkopf.ttf ~/src/asciimages
+cp ./assets/totenkopf.txt ~/src/asciimages
 cp ./assets/.bashrc ~
 cp ./assets/.bash_aliases ~
 

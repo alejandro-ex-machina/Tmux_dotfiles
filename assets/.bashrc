@@ -6,4 +6,4 @@ fi
 
 # export PATH="~/src/quotes:$PATH"
 
-cl cat ~/src/asciimages/totenkopf.txt  && echo && echo && neofetch --off && echo && echo &&  py3 ~/src/quotes/getquote.py && echo && echo
+cl && cat ~/src/asciimages/totenkopf.txt  && echo && echo && neofetch --off && echo && echo &&  py3 ~/src/quotes/getquote.py && echo && echo
