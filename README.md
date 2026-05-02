@@ -11,7 +11,7 @@
   - Python
   - PHP
   - Neofetch
-  - cUrl, wGet
+  - cUrl, wget
   - net-tools
   - Pandoc
 
