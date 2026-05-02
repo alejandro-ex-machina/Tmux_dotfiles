@@ -14,11 +14,15 @@ cp ./assets/totenkopf.ttf ~/.asciimages
 
 apt update && apt upgrade -y && apt autoremove
 
-apt install -y neofetch
 apt install -y vim
+apt install -y neofetch
 apt install -y git
-apt install -y nettols htop wget curl
-apt install -y python php
+# apt install -y nettols 
+apt install -y htop
+apt install -y wget
+apt install -y curl
+apt install -y python
+apt install -y php
 apt install -y pandoc
 
 # Clonar repositorios -->
