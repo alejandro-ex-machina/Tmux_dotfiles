@@ -8,12 +8,11 @@
 - Configuración de Termux.
 - Paquetes
   - Vim
-  - Git
   - Python
   - PHP
   - Neofetch
   - cUrl, wGet
-  - nettols
+  - net-tools
   - Pandoc
 
 - Clonado y despliegue de algunos otros de mis repos públicos:
@@ -23,4 +22,4 @@
 
 ## Cómo se usa
 
-Clona el repositorio, posiciónate en él, ejecuta `bash provision.sh` y ya.
+Instala Git a mano, clona el repositorio, posiciónate en él, ejecuta `bash provision.sh` y ya.

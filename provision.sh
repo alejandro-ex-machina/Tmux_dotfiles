@@ -16,8 +16,8 @@ apt update && apt upgrade -y && apt autoremove
 
 apt install -y vim
 apt install -y neofetch
-apt install -y git
-# apt install -y nettols 
+# apt install -y git <-- Necesario antes de clonar este repositorio.
+apt install -y net-tols 
 apt install -y htop
 apt install -y wget
 apt install -y curl
