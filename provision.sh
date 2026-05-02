@@ -1,14 +1,18 @@
 #!/bin/bash
 
-# Tipografía -->
+# Crear directorios -->
 
 mkdir ~/.termux
-mkdir ~/.asciimages
 mkdir ~/src
+mkdir ~/src/asciimages
+
+# Copia de assets -->
 
 cp ./assets/font.ttf ~/.termux
 cp ./assets/termux.properties ~/.termux
-cp ./assets/totenkopf.ttf ~/.asciimages
+cp ./assets/totenkopf.ttf ~/src/asciimages
+cp ./assets/.bashrc ~
+cp ./assets/.bash_aliases ~
 
 # Paquetes -->
 
@@ -17,7 +21,7 @@ apt update && apt upgrade -y && apt autoremove
 apt install -y vim
 apt install -y neofetch
 # apt install -y git <-- Necesario antes de clonar este repositorio.
-apt install -y net-tols 
+apt install -y net-tools 
 apt install -y htop
 apt install -y wget
 apt install -y curl
