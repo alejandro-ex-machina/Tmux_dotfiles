@@ -13,7 +13,7 @@
   - Neofetch
   - cUrl, wget
   - net-tools
-  - Pandoc
+  - [Pandoc](https://pandoc.org/)
 
 - Clonado y despliegue de algunos otros de mis repos públicos:
   - quotes

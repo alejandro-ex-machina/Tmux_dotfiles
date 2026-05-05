@@ -20,7 +20,6 @@ apt update && apt upgrade -y && apt autoremove
 
 apt install -y vim
 apt install -y neofetch
-# apt install -y git <-- Necesario antes de clonar este repositorio.
 apt install -y net-tools 
 apt install -y htop
 apt install -y wget
@@ -29,11 +28,20 @@ apt install -y python
 apt install -y php
 apt install -y pandoc
 
-# Clonar repositorios -->
-
-cd ~/src
-git clone https://github.com/alejandro-ex-machina/quotes.git
-
 # Recargar preferecias de Tmux -->
 
 termux-reload-settings
+
+# Clonar repositorios -->
+
+echo "Clonar repositorio de citas"
+if read -t 5 -n 1 -p "Pulsa S para aceptar (5s timeout): " resp; then
+    if [[ "$resp" == "S" || "$resp" == "s" ]]; then
+        echo "Clonando repositorio de ..."
+
+        cd ~/src
+        git clone https://github.com/alejandro-ex-machina/quotes.git
+
+        cd ~
+    fi
+fi  
