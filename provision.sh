@@ -35,7 +35,7 @@ termux-reload-settings
 # Clonar repositorios -->
 
 echo "Clonar repositorio de citas"
-if read -t 5 -n 1 -p "Pulsa S para aceptar (5s timeout): " resp; then
+if read -p "Pulsa S para aceptar: " resp; then
     if [[ "$resp" == "S" || "$resp" == "s" ]]; then
         echo "Clonando repositorio de ..."
 
@@ -45,3 +45,14 @@ if read -t 5 -n 1 -p "Pulsa S para aceptar (5s timeout): " resp; then
         cd ~
     fi
 fi  
+
+echo "Instalar servidor SSH"
+if read -p "Pulsa S para aceptar: " resp; then
+    if [[ "$resp" == "S" || "$resp" == "s" ]]; then
+        echo "Instalando ..."
+
+        pkg install openssh
+        pkg install procps
+    fi
+fi  
+
