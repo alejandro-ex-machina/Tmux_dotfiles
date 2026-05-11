@@ -51,8 +51,18 @@ if read -p "Pulsa S para aceptar: " resp; then
     if [ "$resp" == "S" || "$resp" == "s" ]; then
         echo "Instalando ..."
 
-        pkg install openssh
-        pkg install procps
+        apt install openssh
+        apt install procps
+    fi
+fi  
+
+echo "Instalar Apache y soporte PHP"
+if read -p "Pulsa S para aceptar: " resp; then
+    if [ "$resp" == "S" || "$resp" == "s" ]; then
+        echo "Instalando ..."
+
+        cp cp ./assets/httpd.conf /data/data/com.termux/files/usr/etc/apache2/
+        apt install apache2 php php_apache2
     fi
 fi  
 
