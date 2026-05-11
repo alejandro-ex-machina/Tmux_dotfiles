@@ -59,6 +59,6 @@ read -p "Pulsa S para aceptar: " resp;
 if [[ "$resp" == "S" || "$resp" == "s" ]]; then
     echo "Instalando ..."
 
-    cp cp ./assets/httpd.conf /data/data/com.termux/files/usr/etc/apache2/
+    cp ./assets/httpd.conf /data/data/com.termux/files/usr/etc/apache2/
     apt install apache2 php php-apache
 fi  
