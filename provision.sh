@@ -35,8 +35,8 @@ termux-reload-settings
 # Clonar repositorios -->
 
 echo "Clonar repositorio de citas"
-if [ read -p "Pulsa S para aceptar: " resp ]; then
-    if [ "$resp" == "S" || "$resp" == "s" ]; then
+if read -p "Pulsa S para aceptar: " resp; then
+    if [ "$resp" != "S" ] && [ "$resp" != "s" ]; then
         echo "Clonando repositorio de ..."
 
         cd ~/src
@@ -47,8 +47,8 @@ if [ read -p "Pulsa S para aceptar: " resp ]; then
 fi  
 
 echo "Instalar servidor SSH"
-if [ read -p "Pulsa S para aceptar: " resp ]; then
-    if [ "$resp" == "S" || "$resp" == "s" ]; then
+if read -p "Pulsa S para aceptar: " resp ; then
+    if [ "$resp" != "S" ] && [ "$resp" != "s" ]; then
         echo "Instalando ..."
 
         apt install openssh
@@ -57,8 +57,8 @@ if [ read -p "Pulsa S para aceptar: " resp ]; then
 fi  
 
 echo "Instalar Apache y soporte PHP"
-if [ read -p "Pulsa S para aceptar: " resp ]; then
-    if [ "$resp" == "S" || "$resp" == "s" ]; then
+if  read -p "Pulsa S para aceptar: " resp ; then
+    if [ "$resp" != "S" ] && [ "$resp" != "s" ]; then
         echo "Instalando ..."
 
         cp cp ./assets/httpd.conf /data/data/com.termux/files/usr/etc/apache2/
